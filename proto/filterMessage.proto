@@ -1,0 +1,11 @@
+syntax = "proto3";
+package demoMessage;
+option go_package = "./pb";
+import "memoryMessage.proto";
+
+message Filter{
+  double maxPriceUSD = 1;
+  uint32 minCPUCores = 2;
+  double minCPUGhz = 3;
+  Memory memory = 4;
+}
